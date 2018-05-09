@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<body>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>appid</th>
+        <th>sid</th>
+        <th>pid</th>
+        <th>cid</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% res.forEach(function (item) { %>
+        <tr>
+          <td>
+            <%= item.appid %>
+          </td>
+          <td>
+            <%= item.sid %>
+          </td>
+          <td>
+            <%= item.pid %>
+          </td>
+          <td>
+            <%= item.cid %>
+          </td>
+        </tr>
+        <% }) %>
+    </tbody>
+  </table>
+</body>
+
+</html>

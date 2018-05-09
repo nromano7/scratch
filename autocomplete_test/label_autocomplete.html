@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Label Autocomplete</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#autocomplete-4" ).autocomplete({
+               source: [
+                  { label: "Philadelphia", value: "PHL" },
+                  { label: "New York, JFK", value: "JFK" },
+                  { label: "New York, LGA", value: "LGA" },
+                  { label: "Newark", value: "EWR" }
+               ]
+            });
+         });
+      </script>
+      
+   </head>
+   
+   <body>
+      <!-- HTML --> 
+      <div>
+         <p>Airport:</p>
+         <input id = "autocomplete-4">
+      </div>
+   </body>
+</html>
